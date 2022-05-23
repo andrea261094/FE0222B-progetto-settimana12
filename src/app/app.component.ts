@@ -1,10 +1,19 @@
-import { Component } from '@angular/core';
-
+import { Component, OnInit} from '@angular/core';
+import { MovieService } from './features/movies/movies.service';
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  template: `
+  <app-navbar></app-navbar>
+  <router-outlet></router-outlet>
+
+  `,
+  styles: [``]
 })
 export class AppComponent {
-  title = 'prosett12';
+
+  constructor(){}
+
+
 }
+
+
